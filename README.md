@@ -1,59 +1,52 @@
-# AngularFormsGroup
+# Angular Forms Group
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Reactive form using `FormGroup` and `FormControl`
+- Simple profile form for name, email, and password
+- Reset action to clear the form
+- Submit action that logs the current values to the console
+- Light modern styling suitable for learning and demos
 
-```bash
-ng serve
-```
+## Run locally
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Install dependencies:
 
 ```bash
-ng generate component component-name
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. Start the app:
 
 ```bash
-ng generate --help
+npm start
 ```
 
-## Building
+3. Open the app in the browser:
 
-To build the project run:
+```text
+http://localhost:4200/
+```
+
+## Build for production
 
 ```bash
-ng build
+npm run build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This compiles the project and outputs the production bundle into the `dist/` directory.
 
-## Running unit tests
+## Project structure
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
+```text
+src/
+  app/
+    app.ts
+    app.html
+    app.css
 ```
 
-## Running end-to-end tests
+## Notes
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This app is intentionally lightweight and is useful for understanding how Angular reactive forms work in a real component-based setup.
